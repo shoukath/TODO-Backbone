@@ -76,3 +76,12 @@ $('#todoInput').keypress(function(event) {
 //   console.log('Clicked');
 //   //
 // });
+
+
+define('Test', function() {
+  return "HI";
+});
+
+require(['Test'], function(test){
+  console.log(test);
+});
