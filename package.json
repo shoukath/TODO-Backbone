@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/shoukath/TODO-Backbone/issues"
   },
-  "homepage": "https://github.com/shoukath/TODO-Backbone#readme"
+  "homepage": "https://github.com/shoukath/TODO-Backbone#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "less": "^2.7.1"
+  }
 }

@@ -1,0 +1,15 @@
+#todoList {
+  padding: 5px 10px;
+  border: 1px solid gray;
+  display: inline-block;
+  min-width: 200px;
+}
+
+#todoList li {
+  list-style-type: none;
+}
+
+.strike {
+  color: gray;
+  text-decoration: line-through
+}
