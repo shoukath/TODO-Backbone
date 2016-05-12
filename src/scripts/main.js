@@ -1,6 +1,6 @@
-require(['Task', 'TaskList', 'TaskView', 'TaskListView'], function(Task, TaskList, TaskView, TaskListView){
+require(['Task', 'taskList', 'TaskView', 'TaskListView'], function(Task, taskList, TaskView, TaskListView){
 	//Implementing the Backbone objects
-	var taskList = new TaskList();
+	// var taskList = new TaskList();
 
 	var taskListView = new TaskListView({
 	  collection: taskList

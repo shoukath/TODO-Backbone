@@ -5,7 +5,7 @@ require.config({
     underscore: '../bower_components/underscore-amd/underscore',
     backbone: '../bower_components/backbone-amd/backbone',
     Task: 'scripts/Models/Task',
-    TaskList: 'scripts/Collections/TaskList',
+    taskList: 'scripts/Collections/taskList',
     TaskView: 'scripts/Views/TaskView',
     TaskListView: 'scripts/Views/TaskListView'
   }

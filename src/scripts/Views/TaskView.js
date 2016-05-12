@@ -16,7 +16,7 @@ define('TaskView', ['backbone', 'handlebars'], function(Backbone, Handlebars) {
     },
     statusUpdated: function() {
       var checkboxStatus = this.$el.find('input').is(':checked');
-      this.model.set('done', checkboxStatus);
+      this.model.taskStatus(checkboxStatus);
     }
   });
   return TaskView;
