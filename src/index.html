@@ -18,7 +18,7 @@
 	<script id="taskItem" type="text/x-handlebars-template">
 			<input type="checkbox"
 				name="taskStatus" {{#done}}checked{{/done}}>
-			<span class="taskName">{{name}}</span>
+			<span class="taskName {{#done}}strike{{/done}}">{{name}}</span>
 	</script>
 
 	<script src="../bower_components/handlebars/handlebars.min.js"></script>

@@ -1,7 +1,7 @@
 var Task = Backbone.Model.extend({
   defaults: {
     done: false
-  }
+	}
 });
 
 var TaskList = Backbone.Collection.extend({
@@ -14,6 +14,9 @@ var TaskView = Backbone.View.extend({
     'click input': 'statusUpdated'
   },
   template: Handlebars.compile($('#taskItem').html()),
+	initialize: function() {
+		this.listenTo(this.model, 'change', this.render);
+	},
   render: function() {
     var markup = this.template(this.model.toJSON());
     this.$el.html(markup);
@@ -23,13 +26,6 @@ var TaskView = Backbone.View.extend({
   statusUpdated: function() {
     var checkboxStatus = this.$el.find('input').is(':checked');
     this.model.set('done', checkboxStatus);
-
-    if (checkboxStatus) {
-      this.$el.find('.taskName').addClass('strike');
-    } else {
-      this.$el.find('.taskName').removeClass('strike');
-    }
-
   }
 
 });
