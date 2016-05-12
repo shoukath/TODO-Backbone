@@ -3,8 +3,8 @@ define('Task', ['backbone'], function(Backbone) {
     defaults: {
       done: false
   	},
-    taskStatus: function(status) {
-      this.set('done', status);
+    toggle: function(status) {
+      this.set('done', !this.get('done'));
     }
   });
   return Task;
