@@ -1,4 +1,4 @@
-define('TaskView', function() {
+define('TaskView', ['backbone', 'handlebars'], function(Backbone, Handlebars) {
   var TaskView = Backbone.View.extend({
     tagName: 'li',
     events: {

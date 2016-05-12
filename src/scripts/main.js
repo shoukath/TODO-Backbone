@@ -1,4 +1,3 @@
-
 require(['Task', 'TaskList', 'TaskView', 'TaskListView'], function(Task, TaskList, TaskView, TaskListView){
 	//Implementing the Backbone objects
 	var taskList = new TaskList();

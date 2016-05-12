@@ -1,4 +1,4 @@
-define('TaskListView', ['TaskView'], function(TaskView) {
+define('TaskListView', ['backbone', 'TaskView'], function(Backbone, TaskView) {
   var TaskListView = Backbone.View.extend({
     el: '#todoList',
     initialize: function() {
