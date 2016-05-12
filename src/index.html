@@ -11,12 +11,6 @@
 
 	<ul id="todoList"></ul>
 
-	<script id="taskItem" type="text/x-handlebars-template">
-			<input type="checkbox"
-				name="taskStatus" {{#done}}checked{{/done}}>
-			<span class="taskName {{#done}}strike{{/done}}">{{name}}</span>
-	</script>
-
 	<script src="../bower_components/requirejs/require.js"></script>
 	<script src="./scripts/require-init.js"></script>
 	<script src="./scripts/main.js"></script>

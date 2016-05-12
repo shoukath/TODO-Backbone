@@ -1,5 +1,5 @@
-define('Task', ['backbone'], function(Backbone) {
-  var Task = Backbone.Model.extend({
+define('Task', ['Backbone'], function(Backbone) {
+  return Backbone.Model.extend({
     defaults: {
       done: false
   	},
@@ -7,5 +7,4 @@ define('Task', ['backbone'], function(Backbone) {
       this.set('done', !this.get('done'));
     }
   });
-  return Task;
 });

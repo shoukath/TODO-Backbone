@@ -20,6 +20,7 @@
     "backbone-amd": "^1.1.0",
     "underscore-amd": "^1.5.2",
     "handlebars": "^4.0.5",
-    "requirejs": "^2.2.0"
+    "requirejs": "^2.2.0",
+    "text": "requirejs/text#^2.0.15"
   }
 }

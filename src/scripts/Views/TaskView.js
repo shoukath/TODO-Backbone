@@ -1,10 +1,10 @@
-define('TaskView', ['backbone', 'handlebars'], function(Backbone, Handlebars) {
-  var TaskView = Backbone.View.extend({
+define('TaskView', ['Backbone', 'handlebars', 'text!scripts/Templates/Task.hbs'], function(Backbone, Handlebars, TaskTemplate) {
+  return Backbone.View.extend({
     tagName: 'li',
     events: {
       'click input': 'statusUpdated'
     },
-    template: Handlebars.compile($('#taskItem').html()),
+    template: Handlebars.compile(TaskTemplate),
     initialize: function() {
       this.listenTo(this.model, 'change', this.render);
     },
@@ -15,9 +15,7 @@ define('TaskView', ['backbone', 'handlebars'], function(Backbone, Handlebars) {
       return this;
     },
     statusUpdated: function() {
-      // var checkboxStatus = this.$el.find('input').is(':checked');
       this.model.toggle();
     }
   });
-  return TaskView;
 });

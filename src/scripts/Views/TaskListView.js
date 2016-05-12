@@ -1,5 +1,5 @@
-define('TaskListView', ['backbone', 'TaskView'], function(Backbone, TaskView) {
-  var TaskListView = Backbone.View.extend({
+define('TaskListView', ['Backbone', 'TaskView'], function(Backbone, TaskView) {
+  return Backbone.View.extend({
     el: '#todoList',
     initialize: function() {
       this.listenTo(this.collection, 'add', this.render);
@@ -16,5 +16,4 @@ define('TaskListView', ['backbone', 'TaskView'], function(Backbone, TaskView) {
       this.$el.append(renderedTaskItem);
     }
   });
-  return TaskListView;
 });
