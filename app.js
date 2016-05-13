@@ -9,6 +9,7 @@ var dbUrl = 'mongodb://shoukath:shoukath@ds057234.mongolab.com:57234/schools';
 
 app.use(express.static(__dirname + '/src'));
 app.use('/bower_components',  express.static(__dirname + '/bower_components'));
+app.use('/public',  express.static(__dirname + '/public'));
 
 
 app.use(bodyParser.json()); // support json encoded bodies
